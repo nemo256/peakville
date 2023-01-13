@@ -1,20 +1,43 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Router from 'next/router'
-import { useState, useEffect } from "react";
+import Head from "next/head"
+import Image from "next/image"
+import Router from "next/router"
+import { useState, useEffect } from "react"
 
 // custom imports
-import Footer from '../components/Footer.jsx'
+import Footer from "../components/Footer.jsx"
 
 const Login = () => {
-  const [error, setError] = useState('')
+  const [error, setError] = useState("")
   const [isAuthenticated, setIsAuthenticated] = useState(null)
 
   useEffect(() => {
-    setIsAuthenticated(JSON.parse(localStorage.getItem('is_authenticated')))
-  }, [])
+    setIsAuthenticated(JSON.parse(localStorage.getItem("is_authenticated")))
+    if (isAuthenticated == true) {
+      Router.push("/")
+    }
+  }, [isAuthenticated])
 
-  if (isAuthenticated == true) Router.push('/')
+  // Form handling
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setError("")
+    const formData = new FormData(e.currentTarget)
+
+    if (formData.get("username") == "" && formData.get("password") == "") {
+      setError("Empty fields!")
+    } else if (formData.get("username") == "") {
+      setError("Empty username!")
+    } else if (formData.get("password") == "") {
+      setError("Empty password!")
+    } else {
+      if (formData.get("username") == "peakville" && formData.get("password") == "password") {
+        localStorage.setItem("is_authenticated", true)
+        Router.push("/")
+      } else {
+        setError("Invalid username or password!")
+      }
+    }
+  }
 
   return (
     <>
@@ -25,12 +48,17 @@ const Login = () => {
       </Head>
       <div className="max-w-screen-xl text-white mx-auto flex flex-col h-screen justify-between">
         <div className="flex-grow sm:text-sm md:text-sm text-secondary p-4 text-center font-bold">
-          <div className="pt-16 flex justify-center items-center h-full">
+          <div className="pt-12 flex justify-center items-center h-full">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm">
+              {error &&
+                <div class="mb-4 bg-red-200 text-red-600 px-4 py-3 relative" role="alert">
+                  <strong class="font-bold">{error}</strong>
+                </div>
+              }
               <img className="pb-10" src="/peakville.png" alt="Unknown image" />
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4">
-                  <input type="username" className="form-control
+                  <input name="username" type="username" className="form-control
                     block
                     w-full
                     px-4
@@ -48,7 +76,7 @@ const Login = () => {
                     aria-describedby="usernameHelp" placeholder="Username" />
                 </div>
                 <div className="form-group mb-6">
-                  <input type="password" className="form-control
+                  <input name="password" type="password" className="form-control
                     block
                     w-full
                     px-4

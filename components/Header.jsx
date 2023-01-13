@@ -23,8 +23,8 @@ const sections = [
     'link': '/example',
   },
   {
-    'name': 'Example',
-    'link': '/example',
+    'name': 'Logout',
+    'link': '/logout',
   },
 ]
 

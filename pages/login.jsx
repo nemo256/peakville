@@ -71,7 +71,7 @@ const Login = () => {
                     transition
                     ease-in-out
                     m-0
-                    hover:scale-105 hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
+                    hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
                     focus:text-green-900 focus:bg-[#090909] focus:border-green-900 outline-none"
                     aria-describedby="usernameHelp" placeholder="Username" />
                 </div>
@@ -89,7 +89,7 @@ const Login = () => {
                     transition
                     ease-in-out
                     m-0
-                    hover:scale-105 hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
+                    hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
                     focus:text-green-900 focus:bg-[#090909] focus:border-green-900 outline-none"
                     aria-describedby="passwordHelp" placeholder="Password" />
                 </div>

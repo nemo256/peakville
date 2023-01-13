@@ -67,6 +67,7 @@ const Login = () => {
                     px-4
                     py-2
                     placeholder-gray-700
+                    rounded-sm
                     text-xl
                     text-green-900
                     bg-[#0B0C0B] bg-clip-padding
@@ -85,6 +86,7 @@ const Login = () => {
                     px-4
                     py-2
                     placeholder-gray-700
+                    rounded-sm
                     text-xl
                     text-green-900
                     bg-[#0B0C0B] bg-clip-padding
@@ -100,6 +102,7 @@ const Login = () => {
                   w-full
                   py-2.5
                   bg-green-900
+                  rounded-sm
                   text-2xl
                   text-[#B0B0B0]
                   leading-tight
@@ -108,7 +111,9 @@ const Login = () => {
                   active:bg-green-700 active:shadow-lg
                   transition
                   duration-150
-                  ease-in-out">Log In</button>
+                  ease-in-out">
+                    Log In
+                </button>
               </form>
             </div>
           </div>

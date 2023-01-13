@@ -16,6 +16,9 @@ module.exports = {
         accent: 'green',
         white: '#D7D7D7'
       },
+      fontFamily: {
+        body: ["VT323", "monospace"],
+      }
     },
   },
   plugins: [],

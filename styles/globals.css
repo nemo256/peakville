@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
-
 @layer base {
   body {
     background: black;
-    font-family: 'VT323', monospace;
-    /* font-family: 'Press Start 2P', monospace; */
   }
 
   li {
-    @apply px-2 text-base text-white sm:font-bold md:font-medium cursor-pointer hover:text-secondary hover:scale-110 hover:transition hover:ease-out duration-300
+    @apply px-2 text-2xl text-white sm:font-bold md:font-medium cursor-pointer hover:text-accent hover:scale-110 hover:transition hover:ease-out duration-300
   }
 }

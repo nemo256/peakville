@@ -32,12 +32,12 @@ const Header = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sm:text-l md:text-xl bg-primary text-primary text-center p-4 font-bold">
+    <header className="sm:text-l md:text-xl bg-primary text-primary text-center p-4">
       <div className="flex flex-row justify-between">
         <Link href="/">
           <div className="flex flex-row cursor-pointer items-center">
-            <p className="pl-1 text-xl text-accent font-black">Black</p>
-            <p className="pr-20 text-xl text-secondary font-black">Out</p>
+            <p className="pl-1 text-3xl text-accent font-black">Black</p>
+            <p className="pr-20 text-3xl text-secondary font-black">Out</p>
           </div>
         </Link>
         <ul className="hidden md:flex flex-row items-center">
@@ -55,7 +55,7 @@ const Header = () => {
           <ul>
             {open && sections.map((section) => (
               <Link key={section.name} href={section.link}>
-                <li onClick={() => { setOpen(!open) }} className="py-4 text-lg">{section.name}</li>
+                <li onClick={() => { setOpen(!open) }} className="py-4 text-xl">{section.name}</li>
               </Link>
             ))}
           </ul>

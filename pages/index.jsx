@@ -25,8 +25,11 @@ const Home = () => {
         <title>Blackout - Home</title>
         <meta name="description" content="Retro-terminal web app" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
       </Head>
-      <div className="max-w-screen-xl mx-auto flex flex-col h-screen justify-between scroll-smooth snap-y snap-mandatory">
+      <div className="font-body max-w-screen-xl mx-auto flex flex-col h-screen justify-between scroll-smooth snap-y snap-mandatory">
         <Header />
         <Main />
         <Footer />

@@ -45,9 +45,12 @@ const Login = () => {
         <title>Blackout - Login</title>
         <meta name="description" content="Retro-terminal web app" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
       </Head>
-      <div className="max-w-screen-xl text-white mx-auto flex flex-col h-screen justify-between">
-        <div className="flex-grow sm:text-sm md:text-sm text-secondary p-4 text-center font-bold">
+      <div className="font-body text-xl max-w-screen-xl text-white mx-auto flex flex-col h-screen justify-between">
+        <div className="flex-grow sm:text-sm md:text-xl text-secondary p-4 text-center font-bold">
           <div className="pt-12 flex justify-center items-center h-full">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm">
               {error &&
@@ -64,7 +67,7 @@ const Login = () => {
                     px-4
                     py-2
                     placeholder-gray-700
-                    text-base
+                    text-xl
                     text-green-900
                     bg-[#0B0C0B] bg-clip-padding
                     border-2 border-solid border-gray-800
@@ -82,7 +85,7 @@ const Login = () => {
                     px-4
                     py-2
                     placeholder-gray-700
-                    text-base
+                    text-xl
                     text-green-900
                     bg-[#0B0C0B] bg-clip-padding
                     border-2 border-solid border-gray-800
@@ -97,6 +100,7 @@ const Login = () => {
                   w-full
                   py-2.5
                   bg-green-900
+                  text-2xl
                   text-[#B0B0B0]
                   leading-tight
                   hover:scale-105 hover:bg-green-800 hover:shadow-lg hover:text-[#E0E0E0]

@@ -54,8 +54,8 @@ const Login = () => {
           <div className="pt-12 flex justify-center items-center h-full">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm">
               {error &&
-                <div class="mb-4 bg-red-200 text-red-600 px-4 py-3 relative" role="alert">
-                  <strong class="font-bold">{error}</strong>
+                <div className="mb-4 bg-[#101010] text-red-400 px-4 py-3 relative" role="alert">
+                  <strong className="font-bold">{error}</strong>
                 </div>
               }
               <img className="pb-10 hover:scale-105 hover:rotate-[-.3deg] hover:transition hover:ease-out duration-300" src="/peakville.png" alt="Unknown image" />

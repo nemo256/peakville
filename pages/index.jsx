@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     setIsAuthenticated(JSON.parse(localStorage.getItem('is_authenticated')))
-    if (isAuthenticated == false) {
+    if (!isAuthenticated || isAuthenticated == false) {
       Router.push('/login')
     }
   }, [isAuthenticated])

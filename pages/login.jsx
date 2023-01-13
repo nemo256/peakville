@@ -54,7 +54,7 @@ const Login = () => {
           <div className="pt-12 flex justify-center items-center h-full">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm">
               {error &&
-                <div className="mb-4 bg-[#101010] text-red-400 px-4 py-3 relative" role="alert">
+                <div className="mb-4 bg-[#101010] text-red-500 px-4 py-3 relative" role="alert">
                   <strong className="font-bold">{error}</strong>
                 </div>
               }

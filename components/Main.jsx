@@ -9,14 +9,14 @@ const Main = () => {
   return (
     <main className="flex-grow sm:text-l md:text-xl bg-primary text-secondary p-4 text-center font-bold">
       <section className="px-4 sm:-mb-16 sm:mt-4 center">
-<div className="pt-24 pb-8 px-6 flex flex-col sm:flex-row sm:space-x-16 space-y-16 sm:space-y-0">
-          <div className="bg-peakville bg-contain bg-no-repeat sm:w-full sm:h-auto hover:scale-105 hover:rotate-[-.3deg] hover:transition hover:ease-out duration-300">
+        <div className="pt-24 pb-8 px-6 flex flex-col sm:flex-row sm:space-x-16 space-y-16 sm:space-y-0">
+          <div className="mt-10 bg-peakville bg-contain bg-no-repeat sm:w-full sm:h-auto hover:scale-105 hover:rotate-[-.3deg] hover:transition hover:ease-out duration-300">
           </div>
           <div className="w-full px-2">
-            <p className="font-bold cursor-pointer text-center text-4xl text-secondary">
+            <p className="font-bold cursor-pointer text-center text-5xl text-secondary">
               BlackOut
             </p>
-            <p className="mt-8 text-xs text-center text-[#B0B0B0]">
+            <p className="mt-8 text-md text-center text-[#B0B0B0]">
               There are more important things in life than winning or losing a game.
             </p>
             <div className="mt-8 flex justify-center space-x-4 mx-auto font-bold whitespace-nowrap">

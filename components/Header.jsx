@@ -55,7 +55,7 @@ const Header = () => {
           <ul>
             {open && sections.map((section) => (
               <Link key={section.name} href={section.link}>
-                <li onClick={() => { setOpen(!open) }} className="py-4 text-xl">{section.name}</li>
+                <li onClick={() => { setOpen(!open) }} className="py-4">{section.name}</li>
               </Link>
             ))}
           </ul>

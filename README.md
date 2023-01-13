@@ -20,7 +20,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [Install 🔨](#install)
+* [Develop ⚙️](#develop)
 * [License 📑](#license)
 
 ## Develop ⚙️

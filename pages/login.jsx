@@ -55,7 +55,7 @@ const Login = () => {
                   <strong class="font-bold">{error}</strong>
                 </div>
               }
-              <img className="pb-10" src="/peakville.png" alt="Unknown image" />
+              <img className="pb-10 hover:scale-105 hover:rotate-[-.3deg] hover:transition hover:ease-out duration-300" src="/peakville.png" alt="Unknown image" />
               <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4">
                   <input name="username" type="username" className="form-control
@@ -71,7 +71,7 @@ const Login = () => {
                     transition
                     ease-in-out
                     m-0
-                    hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
+                    hover:scale-105 hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
                     focus:text-green-900 focus:bg-[#090909] focus:border-green-900 outline-none"
                     aria-describedby="usernameHelp" placeholder="Username" />
                 </div>
@@ -89,7 +89,7 @@ const Login = () => {
                     transition
                     ease-in-out
                     m-0
-                    hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
+                    hover:scale-105 hover:text-green-900 hover:bg-[#090909] hover:border-green-900 outline-none
                     focus:text-green-900 focus:bg-[#090909] focus:border-green-900 outline-none"
                     aria-describedby="passwordHelp" placeholder="Password" />
                 </div>
@@ -99,9 +99,9 @@ const Login = () => {
                   bg-green-900
                   text-[#B0B0B0]
                   leading-tight
-                  hover:bg-green-800 hover:shadow-lg hover:text-[#E0E0E0]
+                  hover:scale-105 hover:bg-green-800 hover:shadow-lg hover:text-[#E0E0E0]
                   focus:bg-green-800 focus:shadow-lg focus:outline-none focus:ring-0
-                  active:bg-blue-800 active:shadow-lg
+                  active:bg-green-700 active:shadow-lg
                   transition
                   duration-150
                   ease-in-out">Log In</button>

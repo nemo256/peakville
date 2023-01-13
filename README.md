@@ -11,6 +11,10 @@
 ![Maintenance](https://shields.io/maintenance/yes/2022?style=for-the-badge)
 ![License](https://shields.io/github/license/nemo256/peakville?style=for-the-badge)
 
+<!-- Demo image -->
+![Demo](demo1.png)
+![Demo](demo2.png)
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -19,11 +23,21 @@
 * [Install 🔨](#install)
 * [License 📑](#license)
 
-## Install 🔨
-- Step 1
+## Develop ⚙️
+- Clone the project:
 ```shell
-$ yarn
-$ yarn dev
+clone https://github.com/nemo256/peakville
+cd peakville
+```
+
+- Install the required dependencies:
+```shell
+yarn
+```
+
+- Change the code then launch a local server instance:
+```shell
+yarn dev
 ```
 
 ## License 📑

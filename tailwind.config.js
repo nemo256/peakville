@@ -6,10 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'book': "url('/book.jpg')",
+        'peakville': "url('/peakville.png')",
+      },
       colors: {
         primary: 'black',
-        secondary: '#42855B',
-        accent: 'lightgreen',
+        secondary: '#00FF66',
+        accent: 'green',
         white: '#D7D7D7'
       },
     },

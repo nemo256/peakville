@@ -7,8 +7,8 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 const sections = [ 
   {
-    'name': 'Blackout',
-    'link': '/#',
+    'name': 'BlackOut',
+    'link': '/blackout',
   },
   {
     'name': 'Alarm',
